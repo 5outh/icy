@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Client</title> 
+      <script type="text/javascript" src="http://elm-lang.org/elm-runtime.js"></script>
+      <script type="text/javascript" src="build/Client.js"></script>
+   <body>
+      <div id="play" width="500" height="500"></div>
+   </body>
+   <script type="text/javascript">
+      var game = document.getElementById('play');
+      Elm.embed(Elm.Stamper, game, { inState : { p_x : 10, p_y : 10 } });
+   </script>
+</html>
